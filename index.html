@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aclaraciones</title>
+    <link rel="icon" href="imgen/LogoLI.png" type="image/x-icon">
+    <style>
+          body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 50px;
+            background-color: #2dc6ecb9;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .container {
+            text-align: center;
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 25px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .button-container {
+	    display: inline-block; 
+            margin: 2.5px 0;
+	    width: auto;
+        }
+        .button-container h2 {
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+        button {
+            padding: 0.8em 1.8em;
+            border: 2px solid #0f0f0f;
+            position: relative;
+            overflow: hidden;
+            background-color: transparent;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 16px;
+            transition: .3s;
+            z-index: 1;
+            font-family: inherit;
+            color: #050505;
+            margin: 10px;
+        }
+        button::before {
+            content: '';
+            width: 0;
+            height: 300%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+            background: #A2E4F0;
+            transition: .5s ease;
+            display: block;
+            z-index: -1;
+        }
+        button:hover::before {
+            width: 105%;
+        }
+        button:hover {
+            color: #111;
+        }
+    </style>
+</head>
+<body>
+    <body> 
+        <div class="container">
+                <img src="imgen/LogoLI.png" alt="25%" width="100" padding:15px>
+                <h1>Catálogo de Aclaraciones</h1>
+
+                <div class="button-container">
+	    	<a href="https://teams.wal-mart.com/sites/aclaracionesdiarias/Lists/Aclaraciones%20Diarias/Aclaracion.aspx">
+                    <button>Aclaraciones Diarias</button>
+                </div>
+                <div class="button-container">
+		<a href="https://teams.wal-mart.com/sites/aclaracionesdiarias/Lists/Aclaraciones%20Diarias/Aclaracion.aspx">
+                    <button>Aclaraciones Mensuales</button>
+                </div>
+                <div class="button-container">
+		<a href="https://teams.wal-mart.com/sites/InventariotarimasCHEP/SitePages/CollabHome.aspx">
+                    <button>Inventario CHEP</button>
+                </div>
+                <div class="button-container">
+		<a href="##">
+                    <button>Inventario RPC´S</button>
+                </div>
+                <div class="button-container">
+                <a href="##">
+		    <button>Manuales de Aclaraciones</button>
+                </div>
+            </div>
+</body>
+</html>
